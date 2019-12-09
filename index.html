@@ -34,32 +34,28 @@
       </div>
 
       <div class="formulaire_a_droite">
-        <form method="post" action="traitement.php">
-          <p>
-            <input
-              type="text"
-              placeholder="quel choix de livre?"
-              name="pseudo"
-              size="75px"
-            />
-            <input type="submit" value="Submit" />
-          </p>
-        </form>
+        <p>
+          <input
+            type="text"
+            placeholder="quel choix de livre?"
+            name="pseudo"
+            size="75px"
+            id="formulaire"
+            required
+            onkeyup="getValeur()"
+          />
+          <input type="submit" value="Submit" />
+        </p>
       </div>
     </div>
+    <div id="card-container"></div>
+    <!-- <div class="flip-card">
+      <div class="flip-card-inner">
+        <div id="flip-card-front"></div>
+        <div id="flip-card-back"></div>
+      </div>
+    </div> -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-sm">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div id="flip-card-front"></div>
-              <div id="flip-card-back"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
